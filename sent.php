@@ -1,6 +1,6 @@
 <?php
 $dataFile = 'bbs.dat';
-if ($_SERVER['REQUEST_METHOD']) == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $date = $_POST['date'];
   $place =['place'];
   $eventType = $_POST['eventType'];
