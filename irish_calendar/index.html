@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>関東アイリッシュイベントカレンダー</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    <div id="header"><h1><a hfef="このページのurl">関東アイリッシュイベントカレンダー</h1></div>
+
+    <div id="about">
+      <h2>このサイトについて</h2>
+      <p>関東のアイリッシュのライブやセッションなどイベント情報を掲載しています。<br />載せた情報は承認後に<a href="ツイッターアカウントリンク">@ツイッターid</a> に呟かせています。<br />イベント投稿は自由ですので、どんどん情報を投稿してください。</p>
+    </div>
+
+    <div class="contact-form">
+        <div class="form-title">イベント情報登録</div>
+      <form action="sent.php" method="post">
+
+        <input type="date" name="date" required>
+
+        <div class="form-item">場所</div>
+        <textarea name="place" required maxlength="20" placeholder="20字以内で記入してください"></textarea>
+
+
+        <div class="form-item">イベントタイプ</div>
+        <select name="eventType" required>
+          <option value="">未選択</option>
+          <option value="session" >セッション</option>
+          <option value="sessionPractice">セッション練習会</ption>
+          <option value=" concert">コンサート</option>
+          <option value="workshop">ワークショップ</option>
+          <option value="other">その他</option>
+        </select>
+
+        <div class="form-item">内容</div>
+        <textarea name="content" required></textarea>
+
+        <div class="form-title">URL</div>
+        <textarea name="url" placeholder="あれば貼り付けてください"></textarea><br>
+
+
+        <input type="submit" value="内容を確認">
+      </form>
+    </div>
+
+    <h3>直近のイベント</h3>
+
+    <footer></footer>
+  </body>
+</html>
